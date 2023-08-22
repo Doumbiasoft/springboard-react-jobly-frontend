@@ -25,7 +25,7 @@ export default function Home() {
                   <Link className='btn btn-success boxShadow mx-2' to="/login">Log In</Link>
                   </NavItem>
                   <NavItem>
-                     <Link className='btn btn-warning boxShadow mx-2 text-white' to="/login">Sign Up</Link>
+                     <Link className='btn btn-warning boxShadow mx-2 text-white' to="/signup">Sign Up</Link>
                   </NavItem>
                 </Nav>
                 </div>
