@@ -3,7 +3,9 @@ import jwtDecode from "jwt-decode";
 
 
 //const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:3001";
-const BASE_URL = process.env.REACT_APP_BASE_URL || "http://192.168.0.116:3001";//https://jobly-api-att8.onrender.com
+// const BASE_URL = process.env.REACT_APP_BASE_URL || "http://192.168.0.116:3001";
+const BASE_URL = process.env.REACT_APP_BASE_URL || "https://jobly-api-att8.onrender.com";
+//https://jobly-api-att8.onrender.com
 
 
 /** API Class.

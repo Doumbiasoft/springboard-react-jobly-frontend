@@ -55,11 +55,15 @@ function App() {
                 if(currentUser){
                   setUser(currentUser);
                   isLoading(false);
+                }else{
+                  handleLogOut();
+                  isLoading(false);
                 }
             }
           } 
         }
       } catch (error) {
+        handleLogOut();
         isLoading(false);
       }
     }
@@ -69,11 +73,11 @@ function App() {
   return (
     <>
       <CurrentUserContext.Provider value={{...user,token:token}} >
-        <NavBar handleLogOut={handleLogOut}/>
         <div style={{display:displayLoading}}>
          <Loading/>
         </div>
           <div style={{display:displayContent}}>
+          <NavBar handleLogOut={handleLogOut}/>
             <main className='container'>
               <Routes>
                 <Route exact path="/" element={<Home />}/>

@@ -13,7 +13,6 @@ function NotFoundPage() {
         <h3 className="textShadow">Oops the page you are looking for does not exit!</h3>
      </div>
      <p>
-      {/* <a href="/" className='btn btn-success boxShadow  mx-2'>Go back home</a> */}
       <Link className='btn btn-success boxShadow  mx-2' to="/">Go back home</Link>
 
      </p>
