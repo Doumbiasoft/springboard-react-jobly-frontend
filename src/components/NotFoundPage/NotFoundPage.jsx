@@ -1,6 +1,7 @@
 import React from "react";
 import "./NotFoundPage.css"
 import notFoundImg from "../../images/robot-404.png"
+import { Link } from 'react-router-dom';
 
 
 function NotFoundPage() {
@@ -11,7 +12,11 @@ function NotFoundPage() {
         <img className="img-404" src={notFoundImg}  alt="404" style={{width:'500px'}}/>
         <h3 className="textShadow">Oops the page you are looking for does not exit!</h3>
      </div>
-     <p><a href="/" className='btn btn-success boxShadow  mx-2'>Go back home</a></p>
+     <p>
+      {/* <a href="/" className='btn btn-success boxShadow  mx-2'>Go back home</a> */}
+      <Link className='btn btn-success boxShadow  mx-2' to="/">Go back home</Link>
+
+     </p>
     </div>
   );
 }
