@@ -83,8 +83,7 @@ function App() {
                 <Route exact path="/jobs" element={!token? <Navigate to="/" />:<Jobs userApplications={userApplications} isLoading={handleIsLoading}/>}/>
                 <Route exact path="/companies" element={!token? <Navigate to="/" />:<Companies isLoading={handleIsLoading}/>}/>
                 <Route path="/companies/:handle" element={!token? <Navigate to="/" />:<CompanyJobs userApplications={userApplications} isLoading={handleIsLoading}/>}/>
-                <Route path="/404" element={<NotFoundPage />} />
-                <Route path="/*" element={<Navigate to="/" />} />
+                <Route path="/*" element={<NotFoundPage />} />
               </Routes>
             </main>
           </div>
